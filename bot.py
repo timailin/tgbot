@@ -19,7 +19,7 @@ def send_hello(message):
 
 @bot.message_handler(commands=['help'])
 def send_hello(message):
-    bot.reply_to(message, "/start - запуск бота, /hello - приветствие, /help - помощь, /bye - прощание, /pswd - генерация паролля,  /emodji - рандомный эмодзи, /coin - орёл или решка, /timer - таймер, /set <seconds> - установка времени таймера, /unset - сборс таймера")
+    bot.reply_to(message, "/start - запуск бота, /hello - приветствие, /help - помощь, /bye - прощание, /pswd - генерация пароля,  /emodji - рандомный эмодзи, /coin - орёл или решка, /timer - таймер, /set <seconds> - установка времени таймера, /unset - сборс таймера")
 
 
 @bot.message_handler(commands=['bye'])
