@@ -5,6 +5,7 @@ from bot_logic import gen_emodji
 from telebot.types import ReactionTypeEmoji
 import random
 import time, threading, schedule
+#ВНИМАНИЕ!!! БОТ НЕ РАБОТАЕТ БЕЗ bot_logic
 #Вместо ТОКЕN - твой api токен
 bot = telebot.TeleBot("TOKEN")
 
