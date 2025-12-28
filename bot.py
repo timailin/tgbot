@@ -32,20 +32,10 @@ def send_duck(message):
         bot.send_photo(message.chat.id, f)  
         print('duck')
 
-@bot.message_handler(commands=['hello'])
-def send_hello(message):
-    bot.reply_to(message, "Привет! Как дела?")
-    print('hello')
-
 @bot.message_handler(commands=['help'])
 def send_hello(message):
-    bot.reply_to(message, "/start - запуск бота, /meme - рандомный мем на тему программирования, /hello - приветствие, /help - помощь, /bye - прощание, /pswd - генерация паролля,  /emodji - рандомный эмодзи, /coin - орёл или решка, /timer - таймер, /set <seconds> - установка времени таймера, /unset - сборс таймера")
+    bot.reply_to(message, "/start - запуск бота, /meme - рандомный мем на тему программирования, /help - помощь, /pswd - генерация пароля,  /emodji - рандомный эмодзи, /coin - орёл или решка, /timer - таймер, /set <seconds> - установка времени таймера, /unset - сборс таймера")
     print('help')
-
-@bot.message_handler(commands=['bye'])
-def send_bye(message):
-    bot.reply_to(message, "Пока! Удачи!")
-    print('bye')
 
 @bot.message_handler(commands=['pswd'])
 def send_password(message):
