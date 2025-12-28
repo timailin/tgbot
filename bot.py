@@ -8,6 +8,7 @@ import time, threading, schedule
 import os
 #Для работы бота нужно установить библиотеки telebot и schedule. Для установки telebot достаточно написать в терминале команду pip install pyTelegramBotAPI, а для установки schedule - pip install schedule
 #ВНИМАНИЕ!!! БОТ НЕ РАБОТАЕТ БЕЗ bot_logic
+#Также для работы нужны папки "ducks" и "images" со всеми изображениями
 #Вместо ТОКЕN - твой api токен
 bot = telebot.TeleBot("TOKEN")
 print('log:')
